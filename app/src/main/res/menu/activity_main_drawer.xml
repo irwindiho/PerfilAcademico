@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+
+    <item android:title="¿Que dese ver?">
+        <menu>
+
+            <item
+                android:id="@+id/nav_cursos_matriculados"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Cursos" />
+
+            <item
+                android:id="@+id/nav_plan_academico"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Plan Academico" />
+            <item
+                android:id="@+id/nav_estado_financiero"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Estado Financiero" />
+
+        </menu>
+    </item>
+
+</menu>

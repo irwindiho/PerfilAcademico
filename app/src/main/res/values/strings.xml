@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MiPerfilAcademico</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="login.activity">Iniciar Sesion</string>
+
+
+    <string-array name="anios_prueba">
+
+        <item>2016 - 2</item>
+        <item>2016 - 1</item>
+        <item>2015 - 2</item>
+        <item>2015 - 1</item>
+
+    </string-array>
+
+
+</resources>
