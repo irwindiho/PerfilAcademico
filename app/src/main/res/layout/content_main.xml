@@ -9,52 +9,46 @@
     tools:context="com.irvinmarin.apps.miperfilacademico.main.ui.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
-    <com.baoyz.widget.PullRefreshLayout
-        android:id="@+id/swipeRefreshLayout"
+
+    <LinearLayout
+        android:id="@+id/content_main_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
 
         <LinearLayout
-            android:id="@+id/content_main_layout"
+            android:id="@+id/content_init"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-
-            <LinearLayout
-                android:id="@+id/content_init"
+            <TextView
+                style="@style/TextAppearance.AppCompat.Large"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:gravity="center"
+                android:text="Bienvenido al Perfil Academico!" />
 
-                <TextView
-                    style="@style/TextAppearance.AppCompat.Large"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Bienvenido al Perfil Academico!" />
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/logo_upeu" />
 
-                <ImageView
-                    android:layout_width="200dp"
-                    android:layout_height="200dp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="15dp"
-                    android:src="@mipmap/ic_launcher" />
-
-                <TextView
-                    style="@style/TextAppearance.AppCompat.Medium"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="15dp"
-                    android:text="'El que hace algo puede Equivocarse\nPero el que no hace nada ya vive equivocado'" />
-
-            </LinearLayout>
-
+            <TextView
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:text="'El que hace algo puede Equivocarse\nPero el que no hace nada ya vive equivocado'" />
 
         </LinearLayout>
 
-    </com.baoyz.widget.PullRefreshLayout>
+
+    </LinearLayout>
 
 
 </LinearLayout>

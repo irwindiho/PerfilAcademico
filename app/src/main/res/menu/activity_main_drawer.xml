@@ -9,17 +9,21 @@
 
             <item
                 android:id="@+id/nav_cursos_matriculados"
-                android:icon="@drawable/ic_menu_send"
+                android:icon="@drawable/ic_books"
                 android:title="Cursos" />
 
             <item
                 android:id="@+id/nav_plan_academico"
-                android:icon="@drawable/ic_menu_share"
+                android:icon="@drawable/ic_plan"
                 android:title="Plan Academico" />
             <item
                 android:id="@+id/nav_estado_financiero"
                 android:icon="@drawable/ic_menu_send"
                 android:title="Estado Financiero" />
+            <item
+                android:id="@+id/nav_salir"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Salir" />
 
         </menu>
     </item>

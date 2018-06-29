@@ -16,4 +16,6 @@ public interface MainPresenter {
     void setView(MainView view);
 
     void navigationItemSelected(int itemId);
+
+    void onObtenerUserSesion();
 }

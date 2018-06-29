@@ -1,6 +1,7 @@
 package com.irvinmarin.apps.miperfilacademico.database;
 
 import com.raizlabs.android.dbflow.annotation.Database;
+import com.raizlabs.android.dbflow.structure.BaseModel;
 
 /**
  * Created by irvinmarin on 10/05/2018.

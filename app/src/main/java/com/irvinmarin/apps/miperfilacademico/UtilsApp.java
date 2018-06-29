@@ -1,8 +1,13 @@
 package com.irvinmarin.apps.miperfilacademico;
 
-import com.irvinmarin.apps.miperfilacademico.cursos_matricula.ui.entities.CursosDetalleUI;
+import android.util.Log;
+
+import com.irvinmarin.apps.miperfilacademico.cursos.ui.entities.CursosDetalleUI;
 import com.irvinmarin.apps.miperfilacademico.plan_academico.ui.entities.CiclosUI;
 import com.irvinmarin.apps.miperfilacademico.plan_academico.ui.entities.CursosUI;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -161,5 +166,47 @@ public class UtilsApp {
         return cursosUIList;
     }
 
+    public static boolean isOnlineNet() {
+        try {
+            Process p = java.lang.Runtime.getRuntime().exec("ping -c 1 www.google.com");
+            int val = p.waitFor();
+            return (val == 0);
+        } catch (Exception e) {
+            Log.e("isOnlineNet", e.toString());
+        }
+        return false;
+    }
 
+    public static boolean isSuccess(JSONObject jsonObject) {
+        boolean estado;
+        try {
+            estado = jsonObject.getBoolean("Successful");
+        } catch (JSONException e) {
+            e.printStackTrace();
+            estado = false;
+        }
+        return estado;
+    }
+
+
+    public static String getJsonObResult(JSONObject jsonObject) {
+        String s = "";
+        try {
+            s = jsonObject.getJSONObject("Value").toString();
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return s;
+    }
+
+    public static String getJsonObResultArray(JSONObject jsonObject) {
+        String s = "";
+        try {
+            s = jsonObject.getJSONArray("Value").toString();
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return s;
+    }
 }
